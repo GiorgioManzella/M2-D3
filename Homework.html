@@ -78,6 +78,12 @@
           crossorigin="anonymous"
         />
         <script>
+ // exercise n14
+
+          let display = function() {
+
+          }
+
  // exercise n15
             let addImg = function() {
               let img = document.createElement('img');
@@ -86,7 +92,7 @@
               let arrayOfCards = document.getElementsByClassName('hotdeal')  
                 for (i=0; i<arrayOfCards.length; i++) {
                     arrayOfCards[i].appendChild(img)
-                }         //.appendChild(img); --------------------------------------------------Not working as intended.
+                } // --------------------------------------------------Not working as intended.
           }
 
  // exercise n 16
@@ -99,6 +105,10 @@
                         
                     }//--------------------------------------------------------------------------not working as intended
                 }
+
+               
+
+
         </script>
       </head>
       <body>
@@ -511,13 +521,19 @@
             </div>
           </div>
         </div>
+    
+
+      
+
+
+        
 
 <!--Ex 11) Create a footer with the company informations and a "Contact Us" button-->
 
 <footer class="footer mt-auto py-3 bg-info">
     <div class="container">
       <span class="text-white"> 2022|| All rights reserved</span>
-      <button type="button" class="btn btn-dark">Contact us</button>
+      <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-dark">Contact us</button>
     </div>
   </footer>
 
